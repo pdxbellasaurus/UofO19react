@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-// import React, { useState } from "react";
+import React, { Component, useState } from 'react';
 import SearchField from './SearchField';
 import Header from './Header';
 import TableContainer from './Table';
 import API from '../utils/API';
+import _ from 'lodash';
 class DirectoryContainer extends Component {
   state = {
     results: [],
@@ -21,8 +21,10 @@ class DirectoryContainer extends Component {
   }
 
   componentDidUpdate() {
-    console.log(this.state.search);
+    console.log('===============results')
     console.log(this.state.results);
+    console.log('===============data')
+    console.log(this.state.data);
   }
 
   handleInputChange = (event) => {
@@ -31,16 +33,12 @@ class DirectoryContainer extends Component {
     this.setState({
       [name]: value,
     });
-    const filtered = this.state.results.filter((data) =>
-      data.name.first.toLowerCase().includes(this.state.search.toLowerCase())
+    const filtered = this.state.results
+    .filter((data) =>
+    data.name.first.toLowerCase()
+    .includes(this.state.search.toLowerCase())
     );
-    console.log(filtered);
-    this.setState({ result: filtered });
-  };
-
-  handleFormSubmit = (event) => {
-    event.preventDefault();
-    this.getEmployees(this.state.search);
+    this.setState({ results: filtered });
   };
 
   render() {
@@ -50,10 +48,9 @@ class DirectoryContainer extends Component {
         <SearchField
           value={this.state.search}
           handleInputChange={this.handleInputChange}
-          handleFormSubmit={this.handleFormSubmit}
         />
         <TableContainer 
-        results={this.state.results} 
+        results={this.state.results}
         />
       </div>
     );
