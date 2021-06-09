@@ -72,7 +72,7 @@ function TableContainer(props) {
           const age = new Date(data.dob.date).toLocaleString().split(',')[0];
           console.log(data);
           return (
-            <Table.Row onClick={props.data} key={data.email}>
+            <Table.Row key={data.email}>
               <Table.Cell>
                 <Image src={data.picture.thumbnail} rounded />
               </Table.Cell>
