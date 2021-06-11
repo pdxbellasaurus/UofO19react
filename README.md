@@ -13,8 +13,8 @@
     * [Landing Page](#Landing-page)
 
 ## Overview
-The applications allows a user to: \
-*Details comming soon*
+The application built with React and Semantic UI, allows a user to have quick access to an employee directory 
+
 ## Getting Started
 
 To get a local project up and running follow these simple steps.
@@ -50,12 +50,19 @@ npm run build
 ```
 ## Application Functionality and Appearance
 
+When a user loads the page, a table of random users from [Random User API](https://randomuser.me/ will load and is able to filter employees by first name.
 #### The following images show the web application's appearance and functionality: 
 
 *IMAGE COMING SOON*
 
 #### Landing Page
+
 *IMAGE COMING SOON*
+
+
+
+
+
 
 ----------------------
 
