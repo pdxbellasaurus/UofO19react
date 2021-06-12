@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/UofO19react/static/css/main.2ae47eeb.chunk.css",
+    "main.js": "/UofO19react/static/js/main.453a9188.chunk.js",
+    "main.js.map": "/UofO19react/static/js/main.453a9188.chunk.js.map",
+    "runtime-main.js": "/UofO19react/static/js/runtime-main.ee919fa4.js",
+    "runtime-main.js.map": "/UofO19react/static/js/runtime-main.ee919fa4.js.map",
+    "static/css/2.4298bedd.chunk.css": "/UofO19react/static/css/2.4298bedd.chunk.css",
+    "static/js/2.01c3bde5.chunk.js": "/UofO19react/static/js/2.01c3bde5.chunk.js",
+    "static/js/2.01c3bde5.chunk.js.map": "/UofO19react/static/js/2.01c3bde5.chunk.js.map",
+    "index.html": "/UofO19react/index.html",
+    "static/css/2.4298bedd.chunk.css.map": "/UofO19react/static/css/2.4298bedd.chunk.css.map",
+    "static/css/main.2ae47eeb.chunk.css.map": "/UofO19react/static/css/main.2ae47eeb.chunk.css.map",
+    "static/js/2.01c3bde5.chunk.js.LICENSE.txt": "/UofO19react/static/js/2.01c3bde5.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/UofO19react/static/media/outline-icons.ddae9b1b.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee919fa4.js",
+    "static/css/2.4298bedd.chunk.css",
+    "static/js/2.01c3bde5.chunk.js",
+    "static/css/main.2ae47eeb.chunk.css",
+    "static/js/main.453a9188.chunk.js"
+  ]
+}
