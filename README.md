@@ -1,6 +1,6 @@
 # React - Employee Directory
 
-###:rocket: [Launch the Application](https://pdxbellasaurus.github.io/UofO19react/)
+### :rocket: [Launch the Application](https://pdxbellasaurus.github.io/UofO19react/)
 
 ## Table of Contents
 - [Overview](#Overview)
