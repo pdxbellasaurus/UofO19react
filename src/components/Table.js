@@ -68,11 +68,11 @@ function TableContainer(props) {
         </Table.Row>
       </Table.Header>
       <Table.Body>
-        {props.results.map((data) => {
+        {props.results.map((data, index) => {
           const age = new Date(data.dob.date).toLocaleString().split(',')[0];
           console.log(data);
           return (
-            <Table.Row key={data.email}>
+            <Table.Row key={data.email} index={index} >
               <Table.Cell>
                 <Image src={data.picture.thumbnail} rounded />
               </Table.Cell>

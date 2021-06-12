@@ -1,15 +1,15 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import SearchField from './SearchField';
 import Header from './Header';
 import TableContainer from './Table';
 import API from '../utils/API';
 import _ from 'lodash';
+
 class DirectoryContainer extends Component {
   state = {
     results: [],
     search: '',
   };
-
   componentDidMount() {
     API.getEmployees()
       .then((res) =>
@@ -19,14 +19,12 @@ class DirectoryContainer extends Component {
       )
       .catch((err) => console.log(err));
   }
-
   componentDidUpdate() {
-    console.log('===============results')
-    console.log(this.state.results);
-    console.log('===============data')
-    console.log(this.state.data);
+    // console.log('===============results')
+    // console.log(this.state.results);
+    // console.log('===============data')
+    // console.log(this.state.data);
   }
-
   handleInputChange = (event) => {
     const value = event.target.value;
     const name = event.target.name;
@@ -40,7 +38,6 @@ class DirectoryContainer extends Component {
     );
     this.setState({ results: filtered });
   };
-
   render() {
     return (
       <div>
@@ -49,12 +46,11 @@ class DirectoryContainer extends Component {
           value={this.state.search}
           handleInputChange={this.handleInputChange}
         />
-        <TableContainer 
+       { this.state.results?.length ? <TableContainer 
         results={this.state.results}
-        />
+        /> : <h1>Loading...</h1>}
       </div>
     );
   }
 }
-
 export default DirectoryContainer;
